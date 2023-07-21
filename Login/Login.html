@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+</head>
+
+<body>
+    <!-- <div class="user_alert"></div> -->
+
+    <div class="main_container">
+        <div class="logo_container">
+            <img src="./Images/Logo.svg" alt="" srcset="">
+        </div>
+        <!-- //toast notification container -->
+        <div class="container2">
+            <div class="toast">
+                <div class="toast-content">
+                    <i class="fas fa-solid fa-check check"></i>
+                    <div class="message">
+                        <span class="text-2"></span>
+                    </div>
+                </div>
+                <i class="fa-solid fa-xmark close"></i>
+                <div class="progress"></div>
+            </div>
+        
+        <div class="container">
+            <div class="gif">
+                <img src="./Images/welcome.svg" class="gif_welcome" alt="" srcset="">
+            </div>
+            <div class="form_container">
+               <H2 class="welcome_notice">Welcome to DCKAP Palli's Journal <span> &#128075;</span></H2>        
+                <form action="./index.php" method="post">
+                    <div class="form_div">
+                        <div class="email_div">
+                            <label for="emailId">Email:</label><span class="color">*</span><br>
+                            <input class="email" id="emailId" type="email" placeholder="Example@gmail.com" >
+                        </div>
+
+                       <div class="password_div">
+                            <label for="password">Password:</label><span class="color">*</span><br>
+                            <input class="password" id="password" type="password" placeholder="Password">
+                            <span class="passicon"><i id="passwordicon" class="fa-solid fa-eye-slash"></i></span>
+                       </div>
+                       
+                    <button class="loginbtn" type="submit">Login </button>
+                        <p class="add-signup">New to Journal's?<a class="add-signup-a" href="../Signup/Signup.html">signup</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./Login.js"></script>
+</body>
+
+</html>
