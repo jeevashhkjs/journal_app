@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="Signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+</head>
+
+<body>
+
+    <div class="main_container">
+        <div class="logo_container">
+            <img src="./Images/Logo.svg" alt="" srcset="">
+        </div>
+        <div class="container">
+            <div class="toast">
+                <div class="toast-content">
+                    <i class="fa-solid fa-xmark check"></i>
+                    <div class="message">
+                        <span class="text text-2"></span>
+                    </div>
+                </div>
+                <i class="fa-solid fa-xmark close"></i>
+                <div class="progress"></div>
+            </div>
+            <div class="gif">
+                <img src="./Images/welcome.svg" class="gif_welcome" alt="" srcset="">
+                <div class="sign-btn">
+                    <button  id="signin-btn">signIn With Google</button>
+                </div>
+            </div>
+            <div class="form_container">
+               <H2 class="welcome_notice">Welcome to DCKAP Palli's Journal <span>👋</span></H2>        
+                <form action="./index.php" method="post">
+                    <div class="form_div">
+                        <div class="name_div">
+                            <label for="your-name">Your name:</label><span class="color">*</span><br>
+                            <input class="yourname" id="your-name"type="text" placeholder="Enter your Name" >
+                        </div>
+                       <div>
+                        <label for="emailId">Email:</label><span class="color">*</span><br>
+                        <input class="email" id="emailId" type="email" placeholder="Example@gmail.com" ><br><br>
+                       </div>
+
+                       <div>
+                        <label for="password">Password:</label><span class="color">*</span><br>
+                        <input class="password" id="password" type="password" placeholder="Password">
+                        <span class="passicon"><i id="passwordicon" class="fa-solid fa-eye-slash"></i></span>
+                        <br><br>
+                       </div>
+                       
+                       <div>
+                        <label for="conform-password">Confirm Password:</label><span class="color">*</span><br>
+                        <p class="Password_alert"></p>
+                        <input class="confirmpassword" id="conform-password" type="password" placeholder="Confirm password">
+                        <span class="passicon"><i id="passwordicon" class="fa-solid fa-eye-slash"></i></span>
+                        <br><br>
+                       </div>
+
+                        <button class="signbtn" type="submit">Sign Up </button>
+                        <p class="add-login">Already have an Account?<a class="add-login-a" href="../Login/Login.html">Login Here</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="signup.js"></script>
+</body>
+
+</html>
