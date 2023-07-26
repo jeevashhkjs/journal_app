@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="../css/Signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+</head>
+
+<body>
+
+    <div class="main_container">
+        <div class="logo_container">
+            <img src="../images/Logo.svg" alt="" srcset="">
+        </div>
+        <div class="container">
+            <div class="toast">
+                <div class="toast-content">
+                    <i class="fa-solid fa-xmark check"></i>
+                    <div class="message">
+                        <span class="text text-2"></span>
+                    </div>
+                </div>
+                <i class="fa-solid fa-xmark close"></i>
+                <div class="progress"></div>
+            </div>
+            <div class="gif">
+                <img src="../images/welcome.svg" class="gif_welcome" alt="" srcset="">
+                <div class="sign-btn">
+                    <button  id="signin-btn">signIn With Google</button>
+                </div>
+            </div>
+            <div class="form_container">
+                <?php if(isset($_SESSION['register'])): ?>
+                <span class="Already"><?php echo $_SESSION['register']; ?></span>
+                <?php endif;?>
+                <?php unset($_SESSION['register']);?>
+               <H2 class="welcome_notice">Welcome to DCKAP Palli's Journal <span>👋</span></H2>        
+                <form action="/registrationLogic" method="post">
+                    <div class="form_div">
+                        <div class="name_div">
+                            <label for="your-name">Your name:</label><span class="color">*</span><br>
+                            <input class="yourname" id="your-name"type="text" name="userName" placeholder="Enter your Name" required>
+                        </div>
+                       <div>
+                        <label for="emailId">Email:</label><span class="color">*</span><br>
+                        <input class="email" id="emailId" name="email" type="email" placeholder="Example@gmail.com" required><br><br>
+                       </div>
+
+                       <div>
+                        <label for="password">Password:</label><span class="color">*</span><br>
+                        <input class="password" id="password" name="password" type="password" placeholder="Password" required>
+                        <span class="passicon"><i id="passwordicon" class="fa-solid fa-eye-slash"></i></span>
+                        <br><br>
+                       </div>
+                       
+                       <div>
+                        <label for="conform-password">Confirm Password:</label><span class="color">*</span><br>
+                        <p class="Password_alert"></p>
+                        <input class="confirmpassword" name="cpassword" id="conform-password" type="password" placeholder="Confirm password" required>
+                        <span class="passicon"><i id="passwordicon" class="fa-solid fa-eye-slash"></i></span>
+                        <br><br>
+                       </div>
+
+                        <button class="signbtn" type="submit">Sign Up </button>
+                        <p class="add-login">Already have an Account?<a class="add-login-a" href="/login">Login Here</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="../js/signup.js"></script>
+</body>
+
+</html>
