@@ -78,9 +78,6 @@
   --bs-link-hover-color: #0a58ca;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
-}
-
-:root{
   --primary-color:#A82700;
   --secondary-color:#F2F2F2;
   --font_bold-color:#23313E;
@@ -106,14 +103,16 @@ a{
   font-size: 16px;
 }
 
-.profile{
+
+.profile {
   height: 40px;
   width: 40px;
-  background-color: aqua;
   border-radius: 50%;
+  background-image: url(../images/_.jpeg);
+  background-size: cover;
 }
-.settingIcon{
-  margin-top: 250px;
+.settingIcon {
+  margin-top: 180px;
 }
 .alignment{
   display: flex;
@@ -146,17 +145,16 @@ p.quoteText {
 .parentProfile{
   position: relative;
 }
-.drop-img{
-  background-image: url("../0f79adc3f406639738a8510f521ed25c.jpg");
-  height: 40px;
-  width: 40px;
+.drop-img {
+  background-image: url(../images/_.jpeg);
+  height: 58px;
+  width: 58px;
   background-color: aqua;
   background-size: cover;
-  background-position: center;
   border-radius: 50%;
 }
 .headerImg{
-  background-image: url("../0f79adc3f406639738a8510f521ed25c.jpg");
+  background-image: url("../images/_.jpeg");
 }
 .inputText {
   font-size: 12px;
@@ -169,12 +167,13 @@ p.quoteText {
   gap: 15px;
   border-bottom: 1px solid;
   width: 150px;
-  margin-left: 14px;
+  margin: auto;
   padding-bottom: 5px;
 }
 .aligntmentChe {
   margin-left: 16px;
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
@@ -3367,14 +3366,14 @@ textarea.form-control-lg {
   --bs-position: end;
 }
 .dropdown-menu-end[data-bs-popper] {
-  top: 76px;
+  top: 57px;
   right: 0px;
   left: auto;
   background-color: var(--font-color);
-  color:white;
-  width: 180px;
+  color: white;
+  width: 210px;
   text-align: center;
-  padding-bottom: 15px;
+  padding-bottom: 27px;
 }
 .drop-input {
   display: flex;
@@ -10960,6 +10959,9 @@ textarea.form-control-lg {
   margin-left: -15rem;
   transition: margin 0.25s ease-out;
   background-color: var(--primary-color);
+  position: fixed;
+  top: 0px;
+  left: 0px;
 }
 
 #sidebar-wrapper .sidebar-heading {
@@ -10990,56 +10992,347 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
     margin-left: -15rem;
   }
 }
-
-.cards{
+img#logo {
+  padding: 20px 64px;
+  height: 123px;
+}
+.cards {
   display: flex;
   flex-wrap: wrap;
+  gap: 28px;
+  width: 1046px;
+  margin: auto;
 }
-.cards-div{
-  margin-top: 55px;
-  margin-left: 20px;
-  height: 229px;
-  width: 330px;
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+p{
+  margin-bottom: 0px;
+}
+.viewButtons {
+  display: flex;
+  justify-content: end;
+  margin: 15px 12px 15px 0px;
+}
+p.userName {
+  color: var(--font-bold, #23313E);
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+p.userEmail {
+  color: #979191;
+  font-family: Roboto;
+  font-size: 14px;
+}
+
+
+.viewButtons button {
+  font-size: 5px;
+  height: 50px;
+  width: 50px;
+  border: solid 1px var(--primary-color);
   background-color: white;
 }
-
-.cards-img{
-  margin-left:100px ;
-  padding: 30px;
+.viewBtn1{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
-.cards-div h2{
+.viewBtn3{
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.cards-div {
+  height: 240px;
+  width: 330px;
+  background-color: white;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.user-cards {
+  height: 240px;
+  width: 330px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 16px 30px 32px 30px;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-top: 14px;
+}
+.content {
+  height: 95px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 15.5px;
+}
+.end-date {
+  padding: 8px 16px;
+  background-color: var(--font-color);
+  color: white;
+  border-radius: 5px;
+}
+.action-btns {
+    display: flex;
+    gap: 15px;
+}
+.content-title {
+  color: var(--primary-color);
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
-.cards-div h3{
-  margin-top: 9px;
+.drop-input {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.iconFontsize {
+  font-size: 24px;
+  width: 22px;
+}
+
+.sidebarItems {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.more-action-btn{
+  display: flex;
+  position: absolute;
+}
+.starred{
+  background-color: transparent;
+}
+.actionBtn{
+  cursor: pointer;
+}
+
+.more-action-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  left: 176px;
+  background-color: var(--font-color);
+  color: white;
+  width: 82px;
+  height: 30px;
+  border-radius: 4px;
+  visibility: hidden;  
+}
+
+.active-action{
+  visibility: visible;
+}
+
+.positionRel{
+  position: relative;
+}
+
+.view-content {
+  background-color: white;
+  height: 510px;
+  width: 560px;
+  margin: auto;
+  position: fixed;
+  margin-left: 370px;
+  margin-top: 70px;
+  border-radius: 6px;
+}
+
+h3.view-title {
   text-align: center;
+  margin: 12px 0px 20px 0px;
+}
+p.usercontent-view {
+  text-align: justify;
+  padding: 0px 40px;
+}
+.viewContent-header {
+  display: flex;
+  gap: 150px;
+  justify-content: flex-end;
+  margin-right: 35px;
+}
+span.close-view {
+  padding-top: 15px;
+  cursor: pointer;
+}
+
+.de-active{
+  display: none;
+}
+.content{
+  cursor: pointer;
+}
+.share-tab {
+  position: fixed;
+  top: 130px;
+  left: 430px;
+  height: 452px;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+}
+
+p.shareTitle {
+  padding: 20px 0px 0px 20px;
+  color: var(--font-bold, #23313E);
+  font-family: Roboto;
+  font-size: 16px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.shareLine {
+  height: 1px;
+  background-color: var(--font-color);
+  width: 425px;
+  margin: auto;
+}
+.share-input {
+  margin-top: 15px;
+}
+input.user-share-input {
+  width: 349px;
+  height: 36px;
+  border-radius: 6px;
+  border: 0.5px solid #979191;
+  background: var(--secondary-color, #F2F2F2);
+  padding-left: 20px;
+}
+
+button.shareSearch-btn {
+  width: 101px;
+  height: 36px;
+  border-radius: 6px;
+  background: var(--font-bold, #23313E);
+  color: white;
+}
+.share-input {
+  width: 90%;
+  margin: auto;
+  margin-top: 15px;
+  display: flex;
+  gap: 20px;
+}
+div.user-searchImg {
+  background-image: url(../images/_.jpeg);
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  background-color: aqua;
+}
+.user-lists {
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.user {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.edit-user {
+  position: absolute;
+  right: 0px;
+}
+
+.userEdit {
+  width: 90px;
+  height: 34px;
+}
+.lineAling {
+  position: absolute;
+  top: 190px;
+  height: 1px;
+  width: 100%;
+  background-color: #9b9b9b;
+}
+.share-footer {
+  width: 90%;
+  margin: auto;
+  margin-top: 160px;
+}
+.footer-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-foot {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-foot {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+  justify-content: space-between;
+}
+
+.clone-share{
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+button.share-users {
+  width: 81px;
+  height: 36px;
+  border: 0;
+  background-color: var(--font-color);
+  border-radius: 5px;
+  color: white;
+}
+.share-foot-btns {
+  display: flex;
+  gap: 40px;
+}
+
+#black-screen{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  opacity: 50%;
+}
+
+.alert-delete {
+  width: 550px;
+  background-color: var(--font-color);
+}
+
+.share-btn:hover{
   color: var(--primary-color);
 }
-.cards-journal{
-  text-align: justify;
-  padding-left: 30px;
-  padding-right: 30px;
 
-}
-.cards-date{
-
-  margin-top: 10px;
-  font-size: small;
-  border-radius: 7px;
-  text-align: center;
-  font-size: medium;
-  height: 31px;
-  width: 130px;
-  color: white;
-  background-color:var(--font_bold-color) ;
-}
-.cards-footer{
-display: flex;
-justify-content: space-around;
-}
-.cards-footer button {
-  margin-left: 2px;
-  background: transparent;
-  border: 0;
+.share-btn{
+  cursor: pointer;
 }

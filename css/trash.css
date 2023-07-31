@@ -94,6 +94,9 @@
   box-sizing: border-box;
 }
 
+span.material-symbols-outlined {
+  font-size: 24px;
+}
 img#logo {
   padding: 20px 64px;
 }
@@ -103,37 +106,36 @@ i{
 a{
   font-size: 16px;
 }
-.profile{
+
+
+.profile {
   height: 40px;
   width: 40px;
-  background-color: aqua;
   border-radius: 50%;
+  background-image: url(../images/_.jpeg);
+  background-size: cover;
 }
-.settingIcon{
-  margin-top: 250px;
+.settingIcon {
+  margin-top: 180px;
 }
 .alignment{
   display: flex;
   align-items: center;
   gap: 20px;
 }
-/* content page style */
-.btns {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-  justify-content: end;
-  margin-top: 20px;
+.emptyLogo {
+  margin-top: 110px;
 }
-.btnAction{
-  display: flex;
-  gap: 20px;
+p.quoteText {
+  font-family: 'Rancho', cursive;
+  font-size: 36px;
 }
 .searchInput{
   height: 40px;
   margin-right: 112px;
   border: solid 1px var(--primary-color);
 }
+
 .searchAli{
   position: relative;
 }
@@ -144,58 +146,183 @@ a{
   font-size: 16px;
   color: gray;
 }
-
-.cards-item {
-  height: 230px;
-  width: 340px;
-  background-color: white;
-  padding: 10px 30px;
-  border-radius: 5px;
+.parentProfile{
   position: relative;
 }
+.drop-img {
+  background-image: url(../images/_.jpeg);
+  height: 58px;
+  width: 58px;
+  background-color: aqua;
+  background-size: cover;
+  border-radius: 50%;
+}
+.headerImg{
+  background-image: url("../images/_.jpeg");
+}
+.inputText {
+  font-size: 12px;
+}
 
-p.title {
-  text-align: center;
-  font-size: 24px;
-  color: var(--primary-color);
+.input-fields {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid;
+  width: 150px;
+  margin: auto;
+  padding-bottom: 5px;
 }
-.item-footer {
-    display: flex;
-    gap: 90px;
-    align-items: center;
-    position: absolute;
-    bottom: 10px;
+.aligntmentChe {
+  margin-left: 16px;
 }
-.end-date {
-  background-color: var(--primary-color);
+
+
+/* end header style */
+
+/* html page content */
+
+.btns {
+  display: flex;
+  justify-content: end;
+  gap: 15px;
+  margin: 28px 0px;
+}
+
+.viewButtons button {
+  font-size: 5px;
+  height: 50px;
+  width: 50px;
+  border: solid 1px var(--primary-color);
+  background-color: white;
+}
+
+button.btn.btn-dark {
   height: 30px;
-  width: 135px;
+  width: 94px;
+  border-radius: 5px;
+  background: var(--font-bold, #23313E);
   color: white;
   font-size: 12px;
-  border-radius: 10px;
+  font-style: normal;
 }
-.footerDate {
+
+/* cards style */
+
+.cards-div {
+  height: 240px;
+  width: 330px;
+  background-color: white;
+  text-align: center;
   display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
-  padding-top: 6px;
 }
-.actions {
+.user-cards {
+  height: 240px;
+  width: 330px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 16px 30px 32px 30px;
+}
+.footer {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-top: 14px;
+}
+.content {
+  height: 95px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 15.5px;
+}
+.end-date {
+  padding: 8px 16px;
+  background-color: var(--font-color);
+  color: white;
+  border-radius: 5px;
+}
+.action-btns {
+    display: flex;
+    gap: 15px;
+}
+.content-title {
+  color: var(--primary-color);
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
   gap: 15px;
 }
-.all-cards {
+
+.cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 35px;
-  margin-left: 3px;
+  gap: 28px;
+  width: 1046px;
+  margin: auto;
 }
-p.content {
-  height: 124px;
-  overflow: hidden;
+
+/* black secrren effect add */
+div#black-screen {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  opacity: 80%;
+  display: block;
 }
-/* end style */
+.confirm-content p{
+  padding: 0;
+  margin: 0;
+}
+
+.confirm-content {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: white;
+}
+
+.actions {
+  display: flex;
+}
+
+.alert-delete{
+  width: 550px;
+  background-color: var(--font-color);
+}
+.action-btn{
+  width:275px;
+  height: 43px;
+  background: #D9D9D9;
+  box-shadow: 0px 0px 50px 0px #23313E;
+  border: 0;
+}
+
+.action-activebtn{
+  background-color: var(--primary-color);
+}
+.alert-delete {
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  width: 550px;
+  background-color: var(--font-color);
+  display: block;
+} 
+
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
