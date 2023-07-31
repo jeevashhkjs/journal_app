@@ -1,4 +1,4 @@
-@charset "UTF-8";
+
 /*!
 * Start Bootstrap - Simple Sidebar v6.0.6 (https://startbootstrap.com/template/simple-sidebar)
 * Copyright 2013-2023 Start Bootstrap
@@ -78,15 +78,13 @@
   --bs-link-hover-color: #0a58ca;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
-}
-
-:root{
   --primary-color:#A82700;
   --secondary-color:#F2F2F2;
   --font_bold-color:#23313E;
   --font-color:#304C61;
   --icon_style-color:#EDA600;
 }
+
 
 *,
 *::before,
@@ -129,31 +127,43 @@ a{
   width: 930px;
   margin: auto;
 }
+
 .emojCalen {
   display: flex;
+  justify-content: space-between;
+  height: 40px;
+  width: 600px;
+  margin: auto;
   margin-top: 30px;
-  justify-content: center;
-  gap: 70px;
-  align-items: baseline;
+  margin-bottom: 15px;
+  border: 0.5px solid #969FBC;
+  border-radius: 10px;
+  background: rgba(217, 217, 217, 0.80);
+  padding-right: 10px;
+  filter: drop-shadow(0px 3px 7px rgba(0, 0, 0, 0.25));
 }
 
 .calenBtn {
   padding: 8px 18px;
-  border-radius: 5px;
+  background-color: #D9D9D9;
+  color: var(--font_bold-color);
   border: 0;
-  background-color: var(--font-color);
-  color: white;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  outline: none;
 }
-.emojs{
+.emojs {
   display: flex;
   gap: 10px;
+  border-left: solid 0.5px #969FBC;
+  padding-left: 16px;
 }
 .emojsList{
   position: relative;
 }
 p.emojText {
   position: absolute;
-  bottom: 37px;
+  bottom: 24px;
 }
 .emojsList .emoj{
   font-size: 26px;
@@ -233,6 +243,19 @@ button.pubBtn {
   font-size: 16px;
   color: gray;
 }
+.ql-editor {
+  box-sizing: border-box;
+  line-height: 1.42;
+  height: 100%;
+  outline: none;
+  overflow-y: auto;
+  padding: 25px 15px;
+  tab-size: 4;
+  -moz-tab-size: 4;
+  text-align: left;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
 .ql-toolbar.ql-snow {
   border: 0;
   box-sizing: border-box;
@@ -240,6 +263,13 @@ button.pubBtn {
   padding: 8px;
   width: 930px;
   margin: auto;
+}
+p.feelText {
+  font-family: 'Rancho', cursive;
+  font-size: 24px;
+} 
+.calender {
+  border-right: solid 0.5px #969FBC;
 }
 /* end content code */
 @media (prefers-reduced-motion: no-preference) {
