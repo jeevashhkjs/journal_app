@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;300;400;500&family=Roboto&display=swap');
+
+:root {
+    --primary-color: #A82700;
+    --secondary-color: #F2F2F2;
+    --font_bold-color: #23313E;
+    --font-color: #304C61;
+    --icon_style-color: #EDA600;
+}
+@media (min-width: 768px) {
+    #sidebar {
+        --tw-translate-x: 0;
+    }
+}
+body{
+    background-color: var(--secondary-color);
+    font-family: 'League Spartan';
+}
+.main {
+    width: 100%;
+}
+.div{
+    display: flex;
+}
+.flex-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+.action-btns {
+    display: flex;
+    gap: 15px;
+}
+.main{
+    background-color: var(--secondary-color);
+}
+
+#black-screen{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    opacity: 50%;
+}
+.de-active{
+    display: none;
+  }
+.content{
+    cursor: pointer;
+  }
+.view-content {
+    background-color: white;
+    height: 510px;
+    width: 560px;
+    margin: auto;
+    position: fixed;
+    margin-left: 184px;
+    /* margin-top: 70px; */
+    border-radius: 6px;
+  }
+
+h3.view-title {
+text-align: center;
+margin: 12px 0px 20px 0px;
+}
+p.usercontent-view {
+text-align: justify;
+padding: 0px 40px;
+}
+.viewContent-header {
+display: flex;
+gap: 150px;
+justify-content: flex-end;
+margin-right: 35px;
+}
+span.close-view {
+    padding-top: 15px;
+    cursor: pointer;
+}
+/* .main {
+    width: 100%;
+} */
+.div{
+    display: flex;
+}
+.flex-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2px;
+}
+.action-btns {
+    display: flex;
+    gap: 15px;
+}
+@media (min-width: 768px) {
+    #sidebar {
+        --tw-translate-x: 0;
+    }
+}
+button[title]:hover::after {
+       color: red;
+}
+
+.profileImg{
+    background-image: url("https://e0.pxfuel.com/wallpapers/479/674/desktop-wallpaper-samantha-ruth-looking-very-cute-in-saree-mobile.jpg");
+    background-size: cover;
+    background-position: top;
+    border-radius: 50%;
+}
+
+/* homepage */
+
+.action-btn i{
+    height: 24px;
+    width: 24px;
+}
+
+.action-btn{
+    background-color: var(--secondary-color);
+    border: solid 0.5px var(--primary-color);
+}
+
+
+
+.hiddenBtn:hover{
+    background-color: var(--secondary-color);
+    color: var(--font_bold-color);
+}
+
+.blackScreen {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    filter: opacity(0.5);
+}
+
+.de-active{
+    display: none;
+}
+
+.view-user-contents{
+    background-color: white;
+    top: 20%;
+    left: 10%;
+}
+.close-btn{
+    background-color: var(--font_bold-color);
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.content-title{
+    margin-right: 25rem;
+}
+
+/* share tab css */
+
+.share-window{
+    background-color: var(--secondary-color);
+  }
+
+  .user-mail{
+    color: #979191;
+  }
+
+  .userLists{
+    background-color:var(--font-color);
+    color: white;
+  }
+  .userLists li{
+    color: var(--secondary-color);
+  }
+  button.searchEmial {
+    background-color: var(--font-color);
+    font-weight: 400;
+  }
+
+  /* delete css */
+
+.del-action{
+    background-color: var(--font_bold-color);
+    color: var(--secondary-color);
+}
+
+.notification-container{
+    background-color: var(--font_bold-color);
+    color: var(--secondary-color);
+}
+
+.del-btn{
+    font-family: "Roboto";
+    font-size: 24px;
+    color: var(--secondary-color);
+}
+
+.del-cancel{
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+}
+
+.del-submit{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+
+/* writing page css */
+
+.emojs{
+    background-color: rgba(217, 217, 217, 0.80);
+}
+.ql-editor {
+    box-sizing: border-box;
+    line-height: 1.42;
+    height: 224px;
+    outline: none;
+    overflow-y: auto;
+    padding: 12px 15px;
+    tab-size: 4;
+    -moz-tab-size: 4;
+    text-align: left;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+input.dateTime {
+    background-color: rgba(217, 217, 217, 0.80);
+    border: 0;
+}
+
+.emoj{
+    cursor: pointer;
+}
+.emojText{
+    display: none;
+}
+
+.pubBtn{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.active, .selected{
+    display: block;
+}
+
+/* profile page css */
+
+main{
+    background-color: var(--secondary-color);
+}
+
+div .userDiv{
+    background-color: white;
+}
+
+
+
+.sidebar{
+    background-color: var(--font_bold-color);
+    color: var(--secondary-color);
+    height: 500px;
+}
+
+.userDiv{
+    background-color: var(--secondary-color);
+}
+
+.actionsBtns{
+    background-color: var(--font_bold-color);
+    color: var(--secondary-color);
+}
+button.editBtn.pt-1.pb-1.pl-2\.5.pr-2\.5.h-8.rounded-md {
+    color: var(--secondary-color);
+}
+.user-details{
+    background-color: var(--secondary-color);
+    height: 360px;
+}
+.editProfile{
+    background-color: var(--font-color);
+    color: var(--secondary-color);
+}
+.profile{
+    background-image: url("https://e0.pxfuel.com/wallpapers/479/674/desktop-wallpaper-samantha-ruth-looking-very-cute-in-saree-mobile.jpg");
+    background-size: cover;
+    background-position: top;
+}
+
+.head-profile-img{
+    background-image: url("https://e0.pxfuel.com/wallpapers/479/674/desktop-wallpaper-samantha-ruth-looking-very-cute-in-saree-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.swal-button {
+    background-color: #156757;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 24px;
+    margin: 0;
+    cursor: pointer;
+}
+.swal-button:hover {
+    background-color: #1c8d73;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 24px;
+    margin: 0;
+    cursor: pointer;
+}
+button.updateBtn {
+    color: var(--secondary-color);
+}
+
+.user-column1 label{
+    color: var(--font_bold-color);
+}
+.user-column1 input{
+    border: solid 1px var(--font-color);
+}
+
+.blankScreen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    filter: opacity(0.5);
+    height: 100%;
+    width: 100%;
+}
+
+/* user view content */
+
+.positionRel{
+    position: relative;
+  }
+
+  .view-content {
+    background-color: white;
+    height: 510px;
+    width: 560px;
+    margin: auto;
+    position: fixed;
+    margin-left: 370px;
+    margin-top: 70px;
+    border-radius: 6px;
+  }
+
+  h3.view-title {
+    text-align: center;
+    margin: 12px 0px 20px 0px;
+  }
+  p.usercontent-view {
+    text-align: justify;
+    padding: 0px 40px;
+  }
+  .viewContent-header {
+    display: flex;
+    gap: 150px;
+    justify-content: flex-end;
+    margin-right: 35px;
+  }
+  span.close-view {
+    padding-top: 15px;
+    cursor: pointer;
+  }
+
+  .de-active{
+    display: none;
+  }
+  .content{
+    cursor: pointer;
+  }
+
+  /*custom inpu file*/
+
+.label-input-img {
+    display: block;
+    position: relative;
+}
+.user-img-file {
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    font-size: 18px;
+    padding-top: 1px;
+    position: absolute;
+    right: 28px;
+    top: 12px;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.user-input-img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 300px;
+    height: 30px;
+    opacity: 0;
+    visibility: hidden;
+}
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.ql-editor > p
+{
+    height: 230px;
+}
